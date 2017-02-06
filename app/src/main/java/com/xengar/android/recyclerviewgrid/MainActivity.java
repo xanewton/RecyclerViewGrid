@@ -110,11 +110,11 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void initViews(){
-        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.card_recycler_view);
+    private void initViews() {
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.card_recycler_view);
         recyclerView.setHasFixedSize(false);
 
-        int columns = (getResources().getConfiguration().orientation == ORIENTATION_PORTRAIT)? 2 : 3;
+        int columns = (getResources().getConfiguration().orientation == ORIENTATION_PORTRAIT) ? 2 : 3;
         RecyclerView.LayoutManager layoutManager
                 = new GridLayoutManager(getApplicationContext(), columns);
         recyclerView.setLayoutManager(layoutManager);
@@ -125,10 +125,11 @@ public class MainActivity extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
     }
-    private ArrayList<AndroidVersion> prepareData(){
+
+    private ArrayList<AndroidVersion> prepareData() {
 
         ArrayList<AndroidVersion> android_version = new ArrayList<>();
-        for(int i=0; i<android_version_names.length; i++){
+        for (int i = 0; i < android_version_names.length; i++) {
             AndroidVersion androidVersion = new AndroidVersion();
             androidVersion.setAndroid_version_name(android_version_names[i]);
             androidVersion.setAndroid_image_url(android_image_urls[i]);

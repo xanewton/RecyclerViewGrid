@@ -16,6 +16,7 @@
 package com.xengar.android.recyclerviewgrid;
 
 import android.content.Context;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -60,15 +61,24 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         return android.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private TextView tv_android;
         private ImageView img_android;
 
         public ViewHolder(View view) {
             super(view);
 
-            tv_android = (TextView)view.findViewById(R.id.tv_android);
+            tv_android = (TextView) view.findViewById(R.id.tv_android);
             img_android = (ImageView) view.findViewById(R.id.img_android);
+            view.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            //Toast.makeText(context, "Click item: " + tv_android.getText(),
+            //        Toast.LENGTH_SHORT).show();
+            Snackbar.make(view, "Click item: " + tv_android.getText() , Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         }
     }
 
