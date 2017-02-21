@@ -1,6 +1,6 @@
 # RecyclerViewGrid
 
-![alt tag](https://github.com/an-garcia/RecyclerViewGrid/blob/master/readmeImages/Screenshot_1486356030.png)
+![Scheme](/readmeImages/Screenshot_1486356030.png)
 
 Android application to learn to display images and text as Grid using RecyclerView.
 Based on [tutorial](https://www.learn2crack.com/2016/03/grid-recyclerview-with-images-and-text.html)
