@@ -15,7 +15,7 @@ Based on [tutorial](https://www.learn2crack.com/2016/03/grid-recyclerview-with-i
 
 ## License
 
-Copyright 2017 Angel Garcia
+Copyright 2017 Angel Newton
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
